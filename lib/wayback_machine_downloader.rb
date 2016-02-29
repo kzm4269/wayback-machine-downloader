@@ -22,7 +22,7 @@ class WaybackMachineDownloader
   end
 
   def backup_path
-    'websites/' + backup_name + '/'
+    'websites/' + backup_name + '/' + "#{@timestamp}" + '/'
   end
 
   def match_only_filter file_url
